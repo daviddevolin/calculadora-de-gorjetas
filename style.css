@@ -32,29 +32,35 @@ body{
     text-align: center;
 }
 
-.tipsform{
+.tipsForm{
     padding-left: 20px;
     padding-right: 20px;
 
 }
-.forminput{
+.formInput{
     width: 60px;
     padding: 5px 5px 8px 8px;
 }
 
-.forminput:focus{
+.formInput:focus{
     border: 3px solid var(--prymarycolor);
 }
 
-.formselect{
+.formSelect{
     width: 180px;
     padding: 5px;
     padding: 5px 5px 16px 16px;   
 }
 
-.formsubmit{
+.formSubmit{
     text-transform: uppercase;
     display: block;
     margin: 30px auto;
     border-radius: 5px;
+}
+
+#totalTip{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
 }

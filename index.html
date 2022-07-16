@@ -15,35 +15,41 @@
     
         </div>
         <div>
-            <form class="tipsform">
+            <form class="tipsForm" id="tipsForm">
                 <label for="bill">
                     <p>Qual o valor da conta ?</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="100" name="bill" class="forminput">
+                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
                 </p>
-                <label for="serviceQual" id="bill">
+                <label for="serviceQual" >
                     <p> Como foi seu antendimento ?</p>
                 </label>
                 <p>
-                    <select name="serviceQual" id="bill" class="formselect"> 
+                    <select name="serviceQual" id="serviceQual" class="formSelect" required> 
                         <option disabled selected value="0"> Escolha uma opção</option>
-                        <option value="0.3">30% - Incrível</option>
-                        <option value="0.2">20% - Bom</option>
-                        <option value="0.15">15% - Aceitável</option>
-                        <option value="0.1">10% - Ruim</option>
-                        <option value="0.0">00% - Péssimo</option>
+                        <option value="30">30% - Incrível</option>
+                        <option value="20">20% - Bom</option>
+                        <option value="15">15% - Aceitável</option>
+                        <option value="10">10% - Ruim</option>
+                        <option value="0">00% - Péssimo</option>
                     </select>
                 </p>
                 <label for="people">
                     <p>Quantas pessoas vão dividir a conta? </p>
                 </label>
                 <p>
-                    <input type="number" placeholder="1" name="people" id="people" class="forminput" > pessoa(s)
+                    <input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoa(s)
                 </p>
-                <button type="submit" class="formsubmit"> Calcular </button>
+                <button type="submit" class="formSubmit"> Calcular </button>
             </form>
         </div>
+        <div id="totalTip">
+            Gorgeta totlal:
+            R$ <span id="tip"> 0.00 </span>
+            <p id="each">cada</p>
+        </div>
     </div>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
